@@ -1,0 +1,91 @@
+body{
+    padding:0;
+    margin:0;
+   
+    background: url("./assets/tesoro.jpg") no-repeat fixed;
+    background-size: cover;
+   
+}
+.img{
+    width: 450px;
+    height: 338px;
+    border: 2px solid chocolate;
+    cursor: pointer;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    position: relative;
+
+}
+.bingo{
+    background-color: black;
+    color:white;
+    font-weight: 800;
+    font-size: 25px;
+    transition: all 1s
+}
+.title{
+    color:rgb(15, 15, 15);
+    font-weight: 900;
+    padding-top:40px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.aviso{
+    font-size:2rem;
+    font-family: sans-serif;
+    background-color: black;
+    color:white;
+}
+
+.inst{
+ position: absolute;
+ top:10px;
+ font-size:1.17rem;
+ font-weight: 700;
+ right:10px;
+ cursor:pointer;
+
+}
+.bgc{
+   
+    background-color:rgba(29, 1, 2, .8);
+   color:seashell;
+   width: 500px;
+    height: 500px;
+    position: absolute;
+    font-size:2rem;
+    margin-top:120px;
+    font-weight: 800;
+    text-decoration: none;
+    display:flex,
+
+
+}
+
+.bgc-exit{
+    display: none;
+}
+
+li{
+    padding: 10px;;
+}
+
+.bgc--li{
+    text-align:center;
+    font-size:3rem;
+    list-style:none;
+    padding:10px;
+
+}
+a{
+    font-size:1.5rem;
+    color:white;
+    text-decoration:none;
+    position: absolute;
+    bottom:10px;
+}
