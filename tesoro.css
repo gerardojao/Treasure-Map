@@ -1,14 +1,14 @@
 body{
     padding:0;
     margin:0;
-   
+   font-size:16px;
     background: url("./assets/tesoro.jpg") no-repeat fixed;
     background-size: cover;
    
 }
 .img{
-    width: 450px;
-    height: 338px;
+    width: 28.125em;
+    height: 21.125em;
     border: 2px solid chocolate;
     cursor: pointer;
 }
@@ -19,24 +19,27 @@ body{
     align-items: center;
     height:100vh;
     position: relative;
+    font-size:16px;
 
 }
 .bingo{
     background-color: black;
     color:white;
-    font-weight: 800;
-    font-size: 25px;
-    transition: all 1s
+    text-align:center;
+    font-size: 1em;
+    transition: all 1s;
+    width:75%;
+
 }
 .title{
     color:rgb(15, 15, 15);
     font-weight: 900;
-    padding-top:40px;
-    font-size: 2.5rem;
+    padding-top:2.5em;
+    font-size: 2.5em;
     text-align: center;
 }
 .aviso{
-    font-size:2rem;
+    font-size:2em;
     font-family: sans-serif;
     background-color: black;
     color:white;
@@ -45,7 +48,7 @@ body{
 .inst{
  position: absolute;
  top:10px;
- font-size:1.17rem;
+ font-size:1.17em;
  font-weight: 700;
  right:10px;
  cursor:pointer;
@@ -55,11 +58,11 @@ body{
    
     background-color:rgba(29, 1, 2, .8);
    color:seashell;
-   width: 500px;
-    height: 500px;
+   width: 31.25em;
+    height: 31.25em;
     position: absolute;
-    font-size:2rem;
-    margin-top:120px;
+    font-size:2em;
+    height:100vh;
     font-weight: 800;
     text-decoration: none;
     display:flex,
@@ -77,15 +80,77 @@ li{
 
 .bgc--li{
     text-align:center;
-    font-size:3rem;
+    font-size:3em;
     list-style:none;
     padding:10px;
 
 }
 a{
-    font-size:1.5rem;
+    font-size:1.5em;
     color:white;
     text-decoration:none;
     position: absolute;
     bottom:10px;
 }
+
+@media (min-width: 48em) {
+
+    .img{
+        width: 28.125em;
+        height: 21.125em;
+       
+    }
+    .bgc{
+        font-weight: 600;
+       width: 90vw;
+        height: 50vh;
+    
+    }
+    .bgc--li{
+     
+        font-size:2.2em;
+    
+    }
+    .bingo{
+     
+        font-weight: 700;
+        font-size: 1.5em;
+        width:90%;
+        text-align:center;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 23.75rem) {
+    .container{
+        font-size:10px;
+    }
+    .img{
+        width: 28.125em;
+        height: 21.125em;
+       
+    }
+    .bgc{
+        font-weight: 600;
+       width: 95vw;
+        height: 95vh;
+    
+    }
+    .bgc--li{
+     
+        font-size:2em;
+    
+    }
+    .bingo{
+     
+        font-weight: 600;
+        font-size: 1em;
+        width:90%;
+        text-align:center;
+        margin: 0 10px;
+    }
+ }
+
+
+
+
