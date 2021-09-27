@@ -7,12 +7,13 @@ body{
    
 }
 .img{
-    width: 28.125em;
-    height: 21.125em;
+    width: 28.125rem;
+    height: 21.125rem;
     border: 2px solid chocolate;
-    cursor: pointer;
+    cursor: all-scroll;
 }
 .container{
+
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -23,32 +24,36 @@ body{
 
 }
 .bingo{
-    background-color: black;
+    font-size: 1.5rem;
+    background-color: chocolate;
     color:white;
     text-align:center;
-    font-size: 1em;
     transition: all 1s;
-    width:75%;
+    width:100%;
 
 }
 .title{
     color:rgb(15, 15, 15);
     font-weight: 900;
-    padding-top:2.5em;
-    font-size: 2.5em;
+    padding-top:2.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
+
 .aviso{
-    font-size:2em;
+    font-size:1.5rem;
     font-family: sans-serif;
-    background-color: black;
-    color:white;
+    color:#222;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+
 }
 
 .inst{
  position: absolute;
  top:10px;
- font-size:1.17em;
+ font-size:1.17rem;
  font-weight: 700;
  right:10px;
  cursor:pointer;
@@ -57,11 +62,11 @@ body{
 .bgc{
    
     background-color:rgba(29, 1, 2, .8);
-   color:seashell;
-   width: 31.25em;
-    height: 31.25em;
+    color:seashell;
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    font-size:2em;
+    font-size:2rem;
     height:100vh;
     font-weight: 800;
     text-decoration: none;
@@ -75,53 +80,40 @@ body{
 }
 
 li{
-    padding: 10px;;
+    padding: 20px;;
 }
 
 .bgc--li{
     text-align:center;
-    font-size:3em;
+    font-size:2.5rem;
     list-style:none;
     padding:10px;
 
 }
 a{
-    font-size:1.5em;
+    font-size:1.5rem;
     color:white;
     text-decoration:none;
     position: absolute;
     bottom:10px;
+    left:20px;
 }
 
-@media (min-width: 48em) {
+@media (max-width:420px) { 
 
-    .img{
-        width: 28.125em;
-        height: 21.125em;
-       
+    body{
+        font-size:8px;
     }
-    .bgc{
-        font-weight: 600;
-       width: 90vw;
-        height: 50vh;
+   .title{
+        font-size:2rem;
+    }
+    h2{
+        font-size:3rem;
+    }
     
-    }
-    .bgc--li{
-     
-        font-size:2.2em;
-    
-    }
-    .bingo{
-     
-        font-weight: 700;
-        font-size: 1.5em;
-        width:90%;
-        text-align:center;
-        margin: 0 10px;
-    }
 }
 
-@media (max-width: 23.75rem) {
+/* @media (max-width: 23.75rem) {
     .container{
         font-size:10px;
     }
@@ -149,7 +141,7 @@ a{
         text-align:center;
         margin: 0 10px;
     }
- }
+ } */
 
 
 
