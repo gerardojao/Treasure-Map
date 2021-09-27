@@ -7,8 +7,8 @@ body{
    
 }
 .img{
-    width: 28.125rem;
-    height: 21.125rem;
+    width: 400px;
+    height: 303px;
     border: 2px solid chocolate;
     cursor: all-scroll;
 }
@@ -97,6 +97,11 @@ a{
     position: absolute;
     bottom:10px;
     left:20px;
+}
+.container--aviso{
+    background-color: transparent;
+    width: 390px;
+    height: 10%;
 }
 
 @media (max-width:420px) { 
