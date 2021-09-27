@@ -43,7 +43,19 @@ mapa.addEventListener("click",e=>{
      else aviso.innerHTML =("Away from the treasure")
 })  
 
+const count = document.getElementById("count")
 
+
+
+const updateCount = ()=>{
+    fetch("https://api.countapi.xyz/update/gerardo/github/?amount=1")
+        .then(res=>res.json())
+        .then(res=>{
+            count.innerHTML = res.value
+        })
+}
+
+updateCount()
 
 
 

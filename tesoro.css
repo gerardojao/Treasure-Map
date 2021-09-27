@@ -103,6 +103,19 @@ a{
     width: 390px;
     height: 10%;
 }
+.counter{
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    bottom:2rem;
+}
+.counter b{
+    padding:1rem;
+}
+.counter p{
+    padding:1rem;
+}
 
 @media (max-width:420px) { 
 
