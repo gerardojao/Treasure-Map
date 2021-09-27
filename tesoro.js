@@ -5,7 +5,8 @@
 // enviar mensajes
 
 const mapa = document.getElementById("img")
-const aviso = document.getElementById("aviso")
+const containerAviso = document.getElementById("container--aviso")
+
 const axisX = Math.floor(Math.random()*450)
 const axisY = Math.floor(Math.random()*338)
 let cont=0;
@@ -17,8 +18,10 @@ mapa.addEventListener("click",e=>{
     cont++;
     let distance = Math.floor(Math.sqrt((e.clientX-axisX)*(e.clientX-axisX)+(e.clientY-axisY)*(e.clientY-axisY)))
     
-    if(distance<100){
-       aviso.innerHTML = `<h1 class="bingo">YOU HAVE GOT THE TREASURE IN ${cont} OPPORTUNITIES</h1>`;
+
+    if(distance<150){
+     
+       aviso.innerHTML = `<h1 class="bingo">YOU WON IN ${cont} OPPORTUNITIES</h1>`;
       
        setTimeout(() => {
         location.reload()
